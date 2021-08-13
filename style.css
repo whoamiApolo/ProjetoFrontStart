@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--bg-dark);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+:root {
+    --purple: #5280E2;
+    --green: #15CDCB;
+    --bg-dark: #212226;
+    --light-grey: #E0DEDE;
+
+    --menu-height: 75px;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    color: var(--light-grey);
+}
+
+button {
+    background: var(--purple);
+    border-radius: 16px;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    padding: 8px 35px;
+    font-weight: bold;
+}
+
+header {
+    /* background: red; */
+    height: calc(100vh - var(--menu-height));/*obs: Para validar, basta criar uma section */
+    display: flex; /* obs1.1  Com isso o width virará 100%*/
+    align-items: center;
+}
+
+header .container {
+    /* background: purple; */
+    padding: 0 100px;
+    width: 50%;
+    /*obs1: posicionando no centro utilizando display flex */
+    height: fit-content; /*obs1.2: Para resolução do problema, basta inserir este comando. Assim o container terá o tamanho de acordo com as propriedades internas.  */
+}
+
+header .container h1 {
+    color: var(--green);
+}
+
+header .container button {
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--menu-height);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 24px;
+    color: #15CDCB;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+section {
+    height: 2500px;
+    background: var(--purple);
+}
