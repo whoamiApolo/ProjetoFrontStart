@@ -160,6 +160,10 @@ section {
     }
     nav {
         padding: 0 15px;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%;
     }
     nav ul a {
         font-size: 12px;
