@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -10,16 +9,15 @@ html, body {
 }
 
 body, button, input, select, textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
 }
 
 :root {
-    --purple: #5280E2;
-    --green: #15CDCB;
+    --purple: #5280e2;
+    --green: #15cdcb;
     --bg-dark: #212226;
-    --light-grey: #E0DEDE;
-
+    --light-grey: #e0dede;
     --menu-height: 75px;
 }
 
@@ -51,18 +49,19 @@ button {
 }
 
 header {
-    /* background: red; */
-    height: calc(100vh - var(--menu-height));/*obs: Para validar, basta criar uma section */
-    display: flex; /* obs1.1  Com isso o width virará 100%*/
+    height: calc(100vh - var(--menu-height));
+    display: flex;
     align-items: center;
 }
 
 header .container {
-    /* background: purple; */
     padding: 0 100px;
     width: 50%;
-    /*obs1: posicionando no centro utilizando display flex */
-    height: fit-content; /*obs1.2: Para resolução do problema, basta inserir este comando. Assim o container terá o tamanho de acordo com as propriedades internas.  */
+    height: fit-content;
+}
+
+header .container img {
+    display: none;
 }
 
 header .container h1 {
@@ -78,6 +77,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: var(--menu-height);
+    background: var(--bg-dark);
     padding: 0 100px;
     position: sticky;
     top: 0;
@@ -87,14 +87,85 @@ nav img {
     height: 45px;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a {
     font-size: 24px;
-    color: #15CDCB;
+    color: var(--light-grey);
     text-decoration: none;
-    margin: 0 35px;
+}
+
+nav ul a svg {
+    display: none;
 }
 
 section {
-    height: 2500px;
+    height: 1500px;
     background: var(--purple);
 }
+
+/* Responsivo */
+/* desktop - 1150px */
+@media (max-width: 1150px) {
+    nav ul a {
+        font-size: 22px;
+    }
+}
+
+/* desktop 1000px */
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+    nav {
+        padding: 0 30px;
+    }
+    nav ul a {
+        font-size: 18px;
+    }
+}
+
+/* tablet - 767px */
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+    header .container img {
+        display: inline;
+        margin-bottom: 70px;
+    }
+    nav {
+        padding: 0 30px;
+    }
+    nav img {
+        display: none;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+/* Smartphone - 480px */
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+    nav {
+        padding: 0 15px;
+    }
+    nav ul a {
+        font-size: 12px;
+    }
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
+    }
+}/*  */
