@@ -34,8 +34,8 @@ h1, h2 {
     font-weight: 400;
 }
 
-p {
-    color: var(--light-grey);
+.titleGreen {
+    color: var(--green);
 }
 
 button {
@@ -62,10 +62,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -107,6 +103,34 @@ section {
     height: 1500px;
     background: var(--purple);
 }
+
+.aboutMe {
+    display: flex;
+    padding: 100px;
+}
+
+.aboutMe .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.aboutMe .imgContainer {
+    width: 50%;
+    /* text-align: center; Obs1.: para posicionar img no centro*/
+}
+
+.aboutMe .imgContainer img {
+    width: 75%;
+    display: block; /* Obs1.: podemos utilizar essa opção tbm */
+    margin: 0 auto;
+}
+
+.aboutMe .container h2 {
+    font-size: 44px;
+}
+
+
+
 
 /* Responsivo */
 /* desktop - 1150px */
