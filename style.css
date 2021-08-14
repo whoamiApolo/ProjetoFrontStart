@@ -100,8 +100,7 @@ nav ul a svg {
 }
 
 section {
-    height: 1500px;
-    background: var(--purple);
+    background: var(--bg-dark);
 }
 
 .aboutMe {
@@ -117,12 +116,28 @@ section {
 .aboutMe .imgContainer {
     width: 50%;
     /* text-align: center; Obs1.: para posicionar img no centro*/
+    position: relative;
 }
 
 .aboutMe .imgContainer img {
     width: 75%;
-    display: block; /* Obs1.: podemos utilizar essa opção tbm */
-    margin: 0 auto;
+    display: block; /* Obs1.: img center */
+    margin: 0 auto; /* obs1.: img center */
+    height: 100%;
+}
+
+.aboutMe .imgContainer .line {
+    width: calc(75% + 50px);
+    height: calc(100% + 50px);
+    border: solid 1px var(--purple);
+    position: absolute; /* sempre que há absolute devemos indiciar a quem ela é relativa (a classe pai)  */
+    top: -25px;
+    left: calc(50% - 75%/2 - 25px);
+}
+
+.aboutMe .imgContainer .line.green {
+    transform: rotate(3.3deg);
+    border: solid 1px var(--green);
 }
 
 .aboutMe .container h2 {
