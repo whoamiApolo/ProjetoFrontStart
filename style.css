@@ -38,6 +38,10 @@ h1, h2 {
     color: var(--green);
 }
 
+.titlePurple {
+    color: var(--purple);
+}
+
 button {
     background: var(--purple);
     border-radius: 16px;
@@ -77,6 +81,8 @@ nav {
     padding: 0 100px;
     position: sticky;
     top: 0;
+
+    z-index: 99;
 }
 
 nav img {
@@ -145,7 +151,53 @@ section {
     font-size: 44px;
 }
 
+.services {
+    margin: 150px 0;
+    text-align: center;
+    padding: 0 100px;
+}
 
+
+.services .servicesContainer {
+     display: flex;
+     justify-content: space-between;
+     max-width: 1200px;
+     margin: 60px auto 0;
+     
+}
+
+.services .servicesContainer .servicesCards {
+    max-width: 360px;
+    height: 394px;
+    background: #2F3034;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services .servicesContainer .servicesCards p {
+    text-align: left;
+}
+
+.services .servicesContainer .servicesCards img {
+    width: 90px;
+    margin-bottom: 40px;
+}
+
+.servicesCards + .servicesCards {
+    margin-left: 10px;
+}
+
+
+.services .servicesContainer .servicesCards + .servicesCards {
+   /*  margin-left: 10px; */
+}
 
 
 /* Responsivo */
@@ -153,6 +205,10 @@ section {
 @media (max-width: 1150px) {
     nav ul a {
         font-size: 22px;
+    }
+
+    .services {
+        padding: 0 55px;
     }
 }
 
@@ -174,7 +230,6 @@ section {
 
     .aboutMe .container, .aboutMe .imgContainer {
         width: 100%;
-        background: red;
     }
 
     .aboutMe .container{
@@ -188,6 +243,23 @@ section {
         font-size: 40px;;
     }
 
+    .services .servicesContainer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        background: red;
+        padding: 0 30px;
+    }
+    .servicesCards{
+        margin-bottom: 30px; /* obs2. */
+    }
+    .services .servicesCards + .servicesCards {
+        margin-left: 0;
+        /* margin-top: 10px; obs2. */ 
+    }
 }
 
 /* tablet - 767px */
@@ -242,4 +314,8 @@ section {
     .aboutMe {
         padding: 0 40px;
     }
-}/*  */
+
+    .services {
+        margin: 70px 0;
+    }
+}
