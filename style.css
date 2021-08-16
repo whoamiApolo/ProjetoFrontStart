@@ -1,382 +1,431 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    background: var(--bg-dark);
+html,
+body {
+  margin: 0;
+  background: var(--bg-dark);
 }
 
-body, button, input, select, textarea {
-    font-family: "Poppins", sans-serif;
-    color: white;
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 :root {
-    --purple: #5280e2;
-    --green: #15cdcb;
-    --bg-dark: #212226;
-    --light-grey: #e0dede;
-    --menu-height: 75px;
-    --title: bold;
+  --purple: #5280e2;
+  --green: #15cdcb;
+  --bg-dark: #212226;
+  --light-grey: #e0dede;
+  --menu-height: 75px;
+  --title: bold;
 }
 
 h1 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-h1, h2 {
-    margin: 0;
-    font-weight: 400;
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
 }
 
 .titleGreen {
-    color: var(--green);
+  color: var(--green);
 }
 
 .titlePurple {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 button {
-    background: var(--purple);
-    border-radius: 16px;
-    font-size: 18px;
-    color: white;
-    border: 0;
-    padding: 8px 35px;
-    font-weight: bold;
+  background: var(--purple);
+  border-radius: 16px;
+  font-size: 18px;
+  color: white;
+  border: 0;
+  padding: 8px 35px;
+  font-weight: bold;
 }
 
 header {
-    height: calc(100vh - var(--menu-height));
-    display: flex;
-    align-items: center;
+  height: calc(100vh - var(--menu-height));
+  display: flex;
+  align-items: center;
 }
 
 header .container {
-    padding: 0 100px;
-    width: 50%;
-    height: fit-content;
+  padding: 0 100px;
+  width: 50%;
+  height: fit-content;
 }
 
 header .container img {
-    display: none;
+  display: none;
 }
 
 header .container button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: var(--menu-height);
-    background: var(--bg-dark);
-    padding: 0 100px;
-    position: sticky;
-    top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--menu-height);
+  background: var(--bg-dark);
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
 
-    z-index: 99;
+  z-index: 99;
 }
 
 nav img {
-    height: 45px;
+  height: 45px;
 }
 
 nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul a {
-    font-size: 24px;
-    color: var(--light-grey);
-    text-decoration: none;
+  font-size: 24px;
+  color: var(--light-grey);
+  text-decoration: none;
 }
 
 nav ul a svg {
-    display: none;
+  display: none;
 }
 
 section {
-    background: var(--bg-dark);
+  background: var(--bg-dark);
 }
 
 .aboutMe {
-    display: flex;
-    padding: 100px;
+  display: flex;
+  padding: 100px;
 }
 
 .aboutMe .container {
-    width: 50%;
-    padding-right: 50px;
+  width: 50%;
+  padding-right: 50px;
 }
 
 .aboutMe .imgContainer {
-    width: 50%;
-    /* text-align: center; Obs1.: para posicionar img no centro*/
-    position: relative;
+  width: 50%;
+  /* text-align: center; Obs1.: para posicionar img no centro*/
+  position: relative;
 }
 
 .aboutMe .imgContainer img {
-    width: 75%;
-    display: block; /* Obs1.: img center */
-    margin: 0 auto; /* obs1.: img center */
-    height: 100%;
-    object-fit: cover;
+  width: 75%;
+  display: block; /* Obs1.: img center */
+  margin: 0 auto; /* obs1.: img center */
+  height: 100%;
+  object-fit: cover;
 }
 
 .aboutMe .imgContainer .line {
-    width: calc(75% + 50px);
-    height: calc(100% + 50px);
-    border: solid 1px var(--purple);
-    position: absolute; /* sempre que há absolute devemos indiciar a quem ela é relativa (a classe pai)  */
-    top: -25px;
-    left: calc(50% - 75%/2 - 25px);
+  width: calc(75% + 50px);
+  height: calc(100% + 50px);
+  border: solid 1px var(--purple);
+  position: absolute; /* sempre que há absolute devemos indiciar a quem ela é relativa (a classe pai)  */
+  top: -25px;
+  left: calc(50% - 75% / 2 - 25px);
 }
 
 .aboutMe .imgContainer .line.green {
-    transform: rotate(3.3deg);
-    border: solid 1px var(--green);
+  transform: rotate(3.3deg);
+  border: solid 1px var(--green);
 }
 
 .aboutMe .container h2 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 .services {
-    margin: 150px 0;
-    text-align: center;
-    padding: 0 100px;
+  margin: 150px 0 100px;
+  text-align: center;
+  padding: 0 100px;
 }
 
 .services .servicesContainer {
-     display: flex;
-     justify-content: space-between;
-     max-width: 1200px;
-     margin: 60px auto 0; 
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto 0;
 }
 
 .services .servicesContainer .servicesCards {
-    max-width: 360px;
-    height: 394px;
-    background: #2F3034;
-    border: 1px solid var(--purple);
-    border-radius: 16px;
-    padding: 40px 25px;
+  max-width: 360px;
+  height: 394px;
+  background: #2f3034;
+  border: 1px solid var(--purple);
+  border-radius: 16px;
+  padding: 40px 25px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .services .servicesContainer .servicesCards p {
-    text-align: left;
+  text-align: left;
 }
 
 .services .servicesContainer .servicesCards img {
-    width: 90px;
-    margin-bottom: 40px;
+  width: 90px;
+  margin-bottom: 40px;
 }
 
 .services .servicesContainer .servicesCards + .servicesCards {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .portfolio {
-    padding: 0 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    background: url("assets/background.png");
+  padding: 0 100px;
+  text-align: center;
+  background: url("assets/background.png");
+  height: 800px;
 }
 
 .portfolio .portfolioContainer {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 60px auto 0; 
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto 0;
+  margin-top: 130px;
 }
 
 .portfolio .portfolioContainer .portfolioCards {
-background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
-box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(42px);
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.33) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(42px);
 
-border: 1px solid #fff;
-border-radius: 16px;
-max-width: 360px;
-text-align: left;
-padding: 50px 25px
+  border: 1px solid #fff;
+  border-radius: 16px;
+  max-width: 360px;
+  text-align: left;
+  padding: 50px 25px;
 }
 
 .portfolio .portfolioContainer .portfolioCards .imgContainer {
-    margin: 0 25px 50px;
+  margin: 0 25px 50px;
+  position: relative;
 }
 
 .portfolio .portfolioContainer .portfolioCards .imgContainer img {
-    width: 100%;
+  width: 100%;
+}
+
+.portfolio .portfolioCards .imgContainer .line {
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
+  border: solid 1px var(--green);
+  transform: rotate(1.93deg);
+  border-radius: 16px;
+
+  position: absolute; /* sempre que há absolute devemos indiciar a quem ela é relativa (a classe pai)  */
+  top: -12px;
+  left: calc(50% - 100% / 2 - 12px);
 }
 
 .portfolio .portfolioContainer .portfolioCards .languageContainer {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .portfolio .portfolioContainer .portfolioCards .languageContainer ul {
-    display: flex;
-    list-style: none; /* para remover os pontinhos do UL */
-    padding: 0;
+  display: flex;
+  list-style: none; /* para remover os pontinhos do UL */
+  padding: 0;
 }
 
 .portfolio .portfolioContainer .portfolioCards .languageContainer ul li {
-    color: var(--green);
-    border: 1px solid var(--green);
-    border-radius: 16px;
-    padding: 3px 15px;
-    font-style: italic;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 16px;
+  padding: 3px 15px;
+  font-style: italic;
 }
 
 .portfolio .portfolioContainer .portfolioCards .languageContainer ul li + li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .portfolioCards + .portfolioCards {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.portfolio .portfolioCards .titleP{
-    font-weight: var(--title);
-    margin: 0px; 
+.portfolio .portfolioCards .titleP {
+  font-weight: var(--title);
+  margin: 0px;
 }
 
 .portfolio .portfolioCards p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Responsivo */
 /* desktop - 1150px */
 @media (max-width: 1150px) {
-    nav ul a {
-        font-size: 22px;
-    }
+  nav ul a {
+    font-size: 22px;
+  }
 
-    .services {
-        padding: 0 55px;
-    }
+  .services {
+    padding: 0 55px;
+  }
+
 }
 
 /* desktop 1000px */
 @media (max-width: 1000px) {
-    header .container {
-        width: 100%;
-    }
-    nav {
-        padding: 0 50px;
-    }
-    nav ul a {
-        font-size: 18px;
-    }
+  header .container {
+    width: 100%;
+  }
+  nav {
+    padding: 0 50px;
+  }
+  nav ul a {
+    font-size: 18px;
+  }
 
-    .aboutMe {
-        flex-direction: column;
-    }
+  .aboutMe {
+    flex-direction: column;
+  }
 
-    .aboutMe .container, .aboutMe .imgContainer {
-        width: 100%;
-    }
+  .aboutMe .container,
+  .aboutMe .imgContainer {
+    width: 100%;
+  }
 
-    .aboutMe .container{
-        padding-right: 0;
-    }
-    .aboutMe .imgContainer {
-        margin: 70px 0;
-    }
+  .aboutMe .container {
+    padding-right: 0;
+  }
+  .aboutMe .imgContainer {
+    margin: 70px 0;
+  }
 
-    .aboutMe .container h2 {
-        font-size: 40px;;
-    }
+  .aboutMe .container h2 {
+    font-size: 40px;
+  }
 
-    .services .servicesContainer {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
+  .services .servicesContainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .services {
-        padding: 0 30px;
-    }
-    .servicesCards{
-        margin-bottom: 30px; /* obs2. */
-    }
-    .services .servicesCards + .servicesCards {
-        margin-left: 0;
-        /* margin-top: 10px; obs2. */ 
-    }
+  .services {
+    padding: 0 30px;
+  }
+  .servicesCards {
+    margin-bottom: 30px; /* obs2. */
+  }
+  .services .servicesContainer .servicesCards + .servicesCards {
+    margin-left: 0;
+    /* margin-top: 10px; obs2. */
+  }
+
+  .portfolio {
+    padding: 0 30px;
+    height: 100%;
+  }
+  .portfolio .portfolioContainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio .portfolioContainer .portfolioCards + .portfolioCards {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
 }
 
 /* tablet - 767px */
 @media (max-width: 767px) {
-    header .container {
-        width: 100%;
-        padding: 0 30px;
-    }
-    header .container img {
-        display: inline;
-        margin-bottom: 70px;
-    }
-    nav {
-        padding: 0 30px;
-    }
-    nav img {
-        display: none;
-    }
-    nav ul {
-        padding: 0;
-    }
-    nav ul a {
-        font-size: 16px;
-    }
+  /* body {
+        margin-bottom: calc(var(--menu-height) + 50px);
+    } */
 
-    .aboutMe {
-        padding: 100px 30px 0;
-    }
+  header .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  header .container img {
+    display: inline;
+    margin-bottom: 70px;
+  }
+  nav {
+    padding: 0 30px;
+  }
+  nav img {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+
+  .aboutMe {
+    padding: 100px 30px 0;
+  }
 }
 
 /* Smartphone - 480px */
 @media (max-width: 480px) {
-    header .container {
-        padding: 0 40px;
-    }
-    
-    nav {
-        padding: 0 15px;
-        position: fixed;
-        bottom: 0;
-        top: unset;
-        width: 100%;
-    }
-    nav ul a {
-        font-size: 12px;
-    }
-    nav ul a svg {
-        display: block;
-        margin: 0 auto 10px;
-    }
+  header .container {
+    padding: 0 40px;
+  }
 
-    .aboutMe {
-        padding: 0 40px;
-    }
+  nav {
+    padding: 0 15px;
+    position: fixed;
+    bottom: 0;
+    top: unset;
+    width: 100%;
+  }
+  nav ul a {
+    font-size: 12px;
+  }
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
 
-    .services {
-        margin: 70px 0;
-    }
+  .aboutMe {
+    padding: 0 40px;
+  }
+
+  .services {
+    margin: 70px 0;
+  }
+
+  .portfolio {
+    margin: 70px 0;
+  }
 }
