@@ -22,9 +22,10 @@ textarea {
   --purple: #5280e2;
   --green: #15cdcb;
   --bg-dark: #212226;
-  --light-grey: #e0dede;
+  --lightGrey: #e0dede;
   --menu-height: 75px;
   --title: bold;
+  --mediumGrey: #2F3034;
 }
 
 h1 {
@@ -57,6 +58,20 @@ button {
   border: 0;
   padding: 8px 35px;
   font-weight: bold;
+}
+
+.secundaryButton {
+    background: var(--mediumGrey);
+    color: var(--green);
+    font-weight: bold;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.secundaryButton img {
+    margin-right: 15px
 }
 
 header {
@@ -104,7 +119,7 @@ nav ul {
 
 nav ul a {
   font-size: 24px;
-  color: var(--light-grey);
+  color: var(--lightGrey);
   text-decoration: none;
 }
 
@@ -285,6 +300,32 @@ section {
 .portfolio .portfolioCards p {
   margin: 0;
 }
+
+.curriculum {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px 0;
+}
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+
+.curriculum .container .content .curriculumInfo {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
+
 
 /* Responsivo */
 /* desktop - 1150px */
