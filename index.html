@@ -15,21 +15,20 @@
         <h2>Hello</h2>
         <h1 class="titleGreen">I am Apolo</h1>
         <p>Mano, tenho que preencher este campo... Tô sem ideias no momento.</p>
-        <button>Entre em contato</button>
+        <button onclick="window.open('https://wa.me/5511992525364?text=Hi Mr. Apolo.')">Entre em contato</button>
       </div>
     </header>
     <nav>
-      <!--  -->
       <img src="assets/apolinario.png" alt="Loading... logo" />
       <ul>
-        <a href=""><i data-feather="user"></i>Sobre mim</a>
-        <a href=""><i data-feather="briefcase"></i>Serviços</a>
-        <a href=""><i data-feather="image"></i>Portfólio</a>
-        <a href=""><i data-feather="list"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#aboutMe"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
       </ul>
     </nav>
-    <section class="aboutMe">
+    <section id="aboutMe" class="aboutMe">
       <div class="container">
         <h2 class="titleGreen">Sobre Mim</h2>
         <p>
@@ -50,7 +49,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <h1 class="titlePurple">Serviços</h1>
       <div class="servicesContainer">
         <div class="servicesCards">
@@ -82,7 +81,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h1 class="titleGreen">Portfólio</h1>
       <div class="portfolioContainer">
         <div class="portfolioCards">
@@ -144,30 +143,42 @@
       </div>
     </section>
 
-
-    <section class="curriculum">
-    <h1 class="titleGreen">Currículo</h1>
-    <div class="container">
-      <img class="imgCurriculum"src="assets/imgFiles.png" alt="">
-      <div class="content">
-        <div class="infoCurriculum">
-          <span>Nome</span><b>Monkey D. Luffy</b>
-          <span>Idade</span><b>19 anos</b>
-          <span>Formação</span><b>Pirata</b>
-          <span>Cidade</span><b>Vila Foosha</b>
-          <span>Telefone</span><b>(00)123-456-789</b>
-          <span>E-mail</span><b>luffy@reidospiratas</b>
-          <span>Freelance</span><b>Disponível</b>
-          <span>Exp</span><b>HTML e CSS</b>
-          <span>Idiomas</span><b>Inglês</b>
-
-
+    <section id="curriculum" class="curriculum">
+      <h1 class="titleGreen">Currículo</h1>
+      <div class="container">
+        <img class="imgCurriculum" src="assets/imgFiles.png" alt="" />
+        <div class="content">
+          <div class="infoCurriculum">
+            <span>Nome</span><b>Monkey D. Luffy</b> <span>Idade</span
+            ><b>19 anos</b> <span>Formação</span><b>Pirata</b>
+            <span>Cidade</span><b>Vila Foosha</b> <span>Telefone</span
+            ><b>(00)123-456-789</b> <span>E-mail</span
+            ><b>luffy@reidospiratas</b> <span>Freelance</span><b>Disponível</b>
+            <span>Exp</span><b>HTML e CSS</b> <span>Idiomas</span><b>Inglês</b>
+          </div>
+          <button class="secundaryButton" onclick="window.open('https://drive.google.com/drive/folders/1INGy8aTyZGuN4UIRsEHHBYebxOekGOZg?usp=sharing')">
+            <img src="assets/icon.svg" alt="" />Baixe meu currículo completo
+          </button>
         </div>
-        <button class="secundaryButton"><img src="assets/icon.svg" alt="">Baixe meu currículo completo</button>
       </div>
-    </div>
     </section>
 
+    <section id="contact" class="contact">
+      <h1>Vamos trabalhar juntos?</h1>
+      <p>
+        Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou
+        faça parte do seu time, entre em contato comigo!
+      </p>
+      <button onclick="window.open('https://wa.me/5511992525364?text=Hi Apolo. How are you doing?')">Entre em contato</button>
+      <div class="socialMedia">
+        <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="assets/insta.png" alt="" /></a>
+        <a href="https://br.linkedin.com/" target="_blank"><img src="assets/linkedin.png" alt="" /></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="assets/youtube.png" alt="" /></a>
+        <a href="https://wa.me/5511992525364?text=Hello Apolo"><img src="assets/whatsapp.png" alt="" /></a>
+      </div>
+    </section>
+
+    <footer><p>made by Apolo - 2021</p></footer>
 
     <script>
       feather.replace();
